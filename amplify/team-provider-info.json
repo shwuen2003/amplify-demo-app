@@ -16,6 +16,18 @@
         "amplifydemoapp33746fc0": {
           "deploymentBucketName": "amplify-amplifydemoapp-dev-609e2-deployment",
           "s3Key": "amplify-builds/amplifydemoapp33746fc0-68724c69796d69664239-build.zip"
+        },
+        "gohome": {
+          "deploymentBucketName": "amplify-amplifydemoapp-dev-609e2-deployment",
+          "s3Key": "amplify-builds/gohome-6f5145446b534b784678-build.zip"
+        },
+        "goChatbot": {
+          "deploymentBucketName": "amplify-amplifydemoapp-dev-609e2-deployment",
+          "s3Key": "amplify-builds/goChatbot-3363733056494c54796a-build.zip"
+        },
+        "gosales": {
+          "deploymentBucketName": "amplify-amplifydemoapp-dev-609e2-deployment",
+          "s3Key": "amplify-builds/gosales-5052794d31337653314f-build.zip"
         }
       },
       "api": {

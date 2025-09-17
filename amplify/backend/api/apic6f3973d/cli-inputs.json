@@ -7,6 +7,27 @@
       "permissions": {
         "setting": "open"
       }
+    },
+    "/home": {
+      "name": "/home",
+      "lambdaFunction": "gohome",
+      "permissions": {
+        "setting": "open"
+      }
+    },
+    "/chatbot": {
+      "name": "/chatbot",
+      "lambdaFunction": "goChatbot",
+      "permissions": {
+        "setting": "open"
+      }
+    },
+    "/sales": {
+      "name": "/sales",
+      "lambdaFunction": "gosales",
+      "permissions": {
+        "setting": "open"
+      }
     }
   }
 }

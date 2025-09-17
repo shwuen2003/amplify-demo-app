@@ -1,6 +1,7 @@
 import './App.css';
-import { get } from 'aws-amplify/api';   // ✅ new import
+import { get } from 'aws-amplify/api';
 import React, { useState } from 'react';
+import DifyChatbot from './components/DifyChatbot'; // ✅ import chatbot
 
 const myAPI = "apic6f3973d";
 const path = '/customers'; 
@@ -12,13 +13,11 @@ const App = () => {
   async function getCustomer(e) {
     let customerId = e.input;
     try {
-      // ✅ build REST operation
       const restOperation = get({
         apiName: myAPI,
         path: path + "/" + customerId
       });
 
-      // ✅ wait for the response
       const response = await restOperation.response;
       const customer = await response.body.json();  // parse JSON body
 
@@ -50,7 +49,7 @@ const App = () => {
         Response
       </h2>
       {
-        customers.map((thisCustomer, index) => (
+        customers.map((thisCustomer) => (
           <div key={thisCustomer.customerId}>
             <span>
               <b>CustomerId:</b> {thisCustomer.customerId} - 
@@ -59,6 +58,9 @@ const App = () => {
           </div>
         ))
       }
+
+      {/* ✅ Include the chatbot */}
+      <DifyChatbot />
     </div>
   )
 }

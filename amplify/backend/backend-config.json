@@ -9,6 +9,30 @@
           ],
           "category": "function",
           "resourceName": "amplifydemoapp33746fc0"
+        },
+        {
+          "attributes": [
+            "Name",
+            "Arn"
+          ],
+          "category": "function",
+          "resourceName": "gohome"
+        },
+        {
+          "attributes": [
+            "Name",
+            "Arn"
+          ],
+          "category": "function",
+          "resourceName": "goChatbot"
+        },
+        {
+          "attributes": [
+            "Name",
+            "Arn"
+          ],
+          "category": "function",
+          "resourceName": "gosales"
         }
       ],
       "providerPlugin": "awscloudformation",
@@ -17,6 +41,21 @@
   },
   "function": {
     "amplifydemoapp33746fc0": {
+      "build": true,
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda"
+    },
+    "goChatbot": {
+      "build": true,
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda"
+    },
+    "gohome": {
+      "build": true,
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda"
+    },
+    "gosales": {
       "build": true,
       "providerPlugin": "awscloudformation",
       "service": "Lambda"
@@ -36,6 +75,54 @@
         {
           "category": "function",
           "resourceName": "amplifydemoapp33746fc0"
+        }
+      ]
+    },
+    "AMPLIFY_function_goChatbot_deploymentBucketName": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "goChatbot"
+        }
+      ]
+    },
+    "AMPLIFY_function_goChatbot_s3Key": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "goChatbot"
+        }
+      ]
+    },
+    "AMPLIFY_function_gohome_deploymentBucketName": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "gohome"
+        }
+      ]
+    },
+    "AMPLIFY_function_gohome_s3Key": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "gohome"
+        }
+      ]
+    },
+    "AMPLIFY_function_gosales_deploymentBucketName": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "gosales"
+        }
+      ]
+    },
+    "AMPLIFY_function_gosales_s3Key": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "gosales"
         }
       ]
     }
